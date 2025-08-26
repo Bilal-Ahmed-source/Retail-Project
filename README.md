@@ -18,7 +18,7 @@ This project creates a chatbot that understands everyday language and turns it i
 
 **How the Chatbot Works**:
 ---
-The chatbot listens to what the user asks in normal language, uses GPT-4 to turn that into a SQL command, runs the command on a database, and then shows the results in a clear, easy-to-understand way. All this happens smoothly inside the Streamlit app.
+The chatbot listens to what the user asks in normal language, uses GPT-4 o mini to turn that into a SQL command, runs the command on a database, and then shows the results in a clear, easy-to-understand way. All this happens smoothly inside the Streamlit app.
 
 **Installation**:
 ---
