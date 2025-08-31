@@ -8,11 +8,11 @@ from langchain_openai import ChatOpenAI
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 
-user = "admin"
-password = "Nokia123"
-host = "aws-retail-db.ct4eoqs8afa2.eu-north-1.rds.amazonaws.com"
-name = "classicmodels"
-port = "3306"
+user = ""
+password = ""
+host = ""
+name = ""
+port = ""
 
 def init_database(user: str, password: str, host: str, port: str, database: str) -> SQLDatabase:
   db_uri = f"mysql+mysqlconnector://{user}:{password}@{host}:{port}/{database}"
@@ -148,4 +148,5 @@ if user_query is not None and user_query.strip() != "":
     with st.chat_message("AI"):
         response = get_response(user_query, st.session_state.db, st.session_state.chat_history)
         st.markdown(response)
+
     st.session_state.chat_history.append(AIMessage(content=response))
